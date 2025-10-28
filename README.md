@@ -18,10 +18,9 @@ Este projeto realiza a sincronização de quadros (boards) do Trello com projeto
 
 ## Clonar o Repositório
 
-git clone https://seu-repositorio-url.git
+git clone https://github.com/Washington-Vieira/Integra-o-Trello-Asana-.git
 cd seu-repositorio
 
-text
 
 ---
 
@@ -48,7 +47,6 @@ TRELLO_KEY = "Sua_Trello_API_Key"
 TRELLO_TOKEN = "Seu_Trello_Token"
 ASANA_TOKEN = "Seu_Asana_PAT"
 
-text
 
 2. Você pode optar por usar `.env` e `python-dotenv` para gerenciar variáveis de ambiente (opcional).
 
@@ -66,7 +64,6 @@ Execute a aplicação:
 
 python run.py
 
-text
 
 Abra seu navegador em [http://localhost:8501](http://localhost:8501) para interagir com a interface.
 
@@ -81,7 +78,6 @@ Para rodar via Docker:
 
 docker-compose up --build
 
-text
 
 3. Acesse [http://localhost:8501](http://localhost:8501) para usar a aplicação.
 
