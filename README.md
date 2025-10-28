@@ -111,9 +111,6 @@ Para cada card da lista, cria uma tarefa no Asana associada à seção correspon
 
 Mensagens e logs são mostrados em tempo real na interface Streamlit.
 
+
 Licença
 Este projeto está licenciado sob a MIT License.
-
-Código
-
-Você pode copiar esse conteúdo e salvar como `README.md` no diretório raiz do seu projeto. Se
