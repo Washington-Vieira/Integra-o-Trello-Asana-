@@ -19,8 +19,11 @@ Este projeto realiza a sincronização de quadros (boards) do Trello com projeto
 ```bash
 git clone https://github.com/Washington-Vieira/Integra-o-Trello-Asana-.git
 cd Integra-o-Trello-Asana-
-Obter Chaves de API
-Trello
+```
+
+## Obter Chaves de API
+
+### Trello
 Acesse https://trello.com/app-key para obter sua API Key.
 
 Clique no link de geração de token na mesma página para criar seu Token com permissão de leitura e escrita.
@@ -35,21 +38,26 @@ Clique em "Manage Developer Apps" e crie um Personal Access Token (PAT).
 Configurar Ambiente e Variáveis
 Copie o arquivo config.py e insira suas chaves:
 
-python
+```python
 TRELLO_KEY = "Sua_Trello_API_Key"
 TRELLO_TOKEN = "Seu_Trello_Token"
 ASANA_TOKEN = "Seu_Asana_PAT"
+```
+
 Você pode optar por usar .env e python-dotenv para gerenciar variáveis de ambiente (opcional).
 
 Executar o Projeto Localmente
 Instale as dependências:
 
-bash
+```bash
 pip install -r requirements.txt
+```
+
 Execute a aplicação:
 
-bash
+```bash
 python run.py
+```
 Abra seu navegador em http://localhost:8501 para interagir com a interface.
 
 Executar com Docker
@@ -59,12 +67,13 @@ Monte as variáveis no arquivo config.py (normalmente não use .env com este exe
 
 Execute:
 
-bash
+```bash
 docker-compose up --build
+```
 Acesse http://localhost:8501 para usar a aplicação.
 
 Fluxo de Funcionamento
-mermaid
+```mermaid
 flowchart TD
     UI[Usuário acessa a interface Streamlit]
     UI --> Select[Seleciona Board Trello e Workspace Asana]
@@ -83,7 +92,9 @@ flowchart TD
 
     style UI fill:#f9f,stroke:#333,stroke-width:2px
     style Controller fill:#bbf,stroke:#333,stroke-width:2px
-Como a Sincronização Funciona
+```
+
+## Como a Sincronização Funciona
 O app lê via API todos os boards disponíveis do Trello do usuário autenticado.
 
 Exibe os nomes desses boards para que o usuário escolha qual sincronizar.
